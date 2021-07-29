@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 import { BookCard } from '../../components/bookCard';
 import { Marginer } from '../../components/marginer';
-import { Navbar } from '../../components/navbar/index';
+import { Navbar } from '../../components/navbar';
+import { Footer } from '../../components/footer';
 import { TopSection } from './topSection';
 import { BookingSteps } from './bookingSteps';
 import { AboutUs } from './aboutUs';
@@ -30,6 +31,7 @@ export function Homepage() {
       <BookingSteps />
       <Marginer direction='vertical' margin='8em' />
       <AboutUs />
+      <Footer />
     </PageContainer>
   );
 }
