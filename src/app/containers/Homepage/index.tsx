@@ -2,12 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
 import { BookCard } from '../../components/bookCard';
+import { Footer } from '../../components/footer';
 import { Marginer } from '../../components/marginer';
 import { Navbar } from '../../components/navbar';
-import { Footer } from '../../components/footer';
-import { TopSection } from './topSection';
-import { BookingSteps } from './bookingSteps';
 import { AboutUs } from './aboutUs';
+import { BookingSteps } from './bookingSteps';
+import { TopCars } from './topCars';
+import { TopSection } from './topSection';
 
 const PageContainer = styled.div`
   ${tw`
@@ -31,6 +32,8 @@ export function Homepage() {
       <BookingSteps />
       <Marginer direction='vertical' margin='8em' />
       <AboutUs />
+      <Marginer direction='vertical' margin='8em' />
+      <TopCars />
       <Footer />
     </PageContainer>
   );
